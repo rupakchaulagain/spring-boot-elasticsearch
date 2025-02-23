@@ -1,0 +1,39 @@
+
+###POST
+POST http://localhost:8086/saveProduct
+Content-Type: application/json
+
+[
+  {
+    "id": "1",
+    "productName": "Samsung S25 Ultra",
+    "productCategory": "Mobile Phone",
+    "price": 150000
+  },
+  {
+    "id": "2",
+    "productName": "Samsung 24 Ultra",
+    "productCategory": "Mobile Phone",
+    "price": 150000
+  },
+  {
+    "id": "3",
+    "productName": "Samsung S23 Ultra",
+    "productCategory": "Mobile Phone",
+    "price": 150000
+  },
+  {
+    "id": "4",
+    "productName": "Samsung S25 Ultra",
+    "productCategory": "Mobile Phone",
+    "price": 150000
+  }
+]
+
+###GET ALL DATA
+GET http://localhost:8086/findAll
+Content-Type: application/json
+
+###GET BY NAME
+GET http://localhost:8086/findByProductName/S23
+Content-Type: application/json

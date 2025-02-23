@@ -1,0 +1,62 @@
+###Without Query
+GET http://localhost:9200/product/_search
+
+###With Query
+GET http://localhost:9200/product/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "match": {
+      "productName": "Ram"
+    }
+  }
+}
+
+###With WildCard
+GET http://localhost:9200/product/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "wildcard": {
+      "productName": "ram*"
+    }
+  }
+}
+
+###With WildCard
+GET http://localhost:9200/product/_search
+Content-Type: application/json
+
+{
+"query": {
+"wildcard": {
+"productName": "s*"
+}
+}
+}
+
+###With WildCard
+GET http://localhost:9200/product/_search
+Content-Type: application/json
+
+{
+"query": {
+"wildcard": {
+"productName": "ru*"
+}
+}
+}
+
+###With WildCard
+GET http://localhost:9200/customers/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "wildcard": {
+      "lastName": "chaulagain*"
+    }
+  }
+}
